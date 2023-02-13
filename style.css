@@ -1,0 +1,102 @@
+:root {
+  /* CSS HEX */
+  --black-olive: #1f271bff;
+  --paynes-gray: #19647eff;
+  --verdigris: #28afb0ff;
+  --naples-yellow: #f4d35eff;
+  --sandy-brown: #ee964bff;
+}
+
+* {
+  font-family: "Inconsolata", monospace;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--paynes-gray);
+  margin: 20vh auto;
+}
+.body {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+header h1 {
+  color: var(--naples-yellow);
+}
+form {
+  margin-bottom: 20px;
+}
+hr {
+  border: 1px solid var(--verdigris);
+  width: 90%;
+}
+#text {
+  border-radius: 10px;
+  width: auto;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+.btn {
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--paynes-gray);
+  background-color: var(--naples-yellow);
+  padding: 10px 30px;
+  border: 2px solid var(--naples-yellow);
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 10px;
+  transition: 1000ms;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--paynes-gray);
+  border: solid 2px var(--naples-yellow);
+}
+.btn-reset {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  background-color: var(--verdigris);
+  padding: 10px 30px;
+  border: 2px solid var(--verdigris);
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 10px;
+  transition: 1000ms;
+  transform: translateY(0);
+  cursor: pointer;
+}
+.btn-reset:hover {
+  background-color: #fff;
+  color: var(--paynes-gray);
+  border: solid 2px var(--verdigris);
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.container h1 {
+  margin: 0 20px;
+}
+.container input {
+  width: 20px;
+  height: 20px;
+}
+
+.area.active {
+  border: 2px solid red;
+}
+.alert {
+  color: red;
+  margin-bottom: 0;
+  display: none;
+}
+.alert.active {
+  display: inherit;
+}
