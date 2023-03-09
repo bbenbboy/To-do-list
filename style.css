@@ -26,6 +26,9 @@ header h1 {
 }
 form {
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 hr {
   border: 1px solid var(--verdigris);
@@ -35,7 +38,7 @@ hr {
   border-radius: 10px;
   width: auto;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 20px;
 }
 .btn {
@@ -51,6 +54,7 @@ hr {
   transition: 1000ms;
   transform: translateY(0);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -76,17 +80,18 @@ hr {
   color: var(--paynes-gray);
   border: solid 2px var(--verdigris);
 }
-.container {
+.output-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 0;
 }
-.container h1 {
+.output-container h1 {
   margin: 0 20px;
+  font-size: 1.3rem;
 }
-.container input {
-  width: 20px;
-  height: 20px;
+.output-container p {
+  font-size: 0.8rem;
 }
 
 .area.active {
